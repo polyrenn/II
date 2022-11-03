@@ -11,7 +11,7 @@ const Nav = () => (
   <nav>
     <ul>
       <li>
-        <Link href="/">
+        <Link href="/" legacyBehavior>
           <a>Home</a>
         </Link>
       </li>
@@ -19,7 +19,7 @@ const Nav = () => (
         {links.map(
           ({ key, href, label }) => (
             <li key={key}>
-              <Link href={href}>
+              <Link href={href} legacyBehavior>
                 <a>{label}</a>
               </Link>
             </li>
