@@ -1,3 +1,247 @@
 .row {
     background-color: aliceblue !important;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.onboarding{
+    padding-top: 30px;
+    width: 95%;
+    margin: auto;
+}
+.onboarding h1, .report h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.space{
+    margin-top: 40%;
+}
+.onboarding .show{
+    width: 150px;
+    height: 150px;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.onboarding .button, .welcome .buttonB{
+    width: 327px;
+    margin: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome .buttonB{
+    background-color: rgb(217, 213, 213);
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.writingsA p:nth-child(1){
+    font-weight: bold;
+    font-size: 2rem;
+    width: 70%;
+    margin: 15px 0;
+    height: 10%;
+}
+.writingsA p:nth-child(2){
+    color: grey;
+    margin-bottom: 20px;
+    height: 30%;
+}
+.brodcast p:nth-child(1), .brodcast p:nth-child(2){
+    color: whitesmoke;
+}
+
+.circularDots{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.circularDots div{
+    border: 1px solid grey;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+.circularDots .active{
+    background-color: black;
+    border-color: black;
+}
+.welcome .createA{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.welcome .createA p span{
+    color: rgb(5, 203, 203);
+}
+.danger{
+    width: 95%;
+    margin: auto;
+}
+.dangerText, .report .question{
+    margin-top: 10%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.dangerText span, .report .question span{
+    color: red;
+}
+.dangerList{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    list-style: none;
+}
+.dangerList li{
+    border: 1px solid rgb(186, 185, 185);
+    border-radius: 9px;
+    padding: 10px;
+    height: 140px;
+}
+.dangerList li div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.danger img{
+    width: 40px;
+}
+.centralize{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.report .question{
+    font-size: 1.6rem;
+    width: 80%;
+}
+.report .show{
+    width: 220px;
+    height: 220px;
+    margin-top: 15%;
+}
+.report .emeButtons{
+    margin-top: 40%;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    font-size: 0.9rem;
+}
+.report .emeButtons div{
+    width: 150px;
+    height: 80px;
+    background-color: #0d0d0d;
+    color: whitesmoke;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brodcast{
+    background-color: #ef6868;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.brodcast section h1,.brodcast .show{
+    display: none;
+}
+.brodcast .button{
+    color: black;
+    background-color: whitesmoke;
+}
+.brodcast .pin{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    background-color: #f6a2a2;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 10;
+}
+.brodcast .bigCircle{
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    border: none;
+    background-color: #f6a2a2;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+.brodcast .forBrodcast{
+    position: absolute;
+    bottom: 7%;
+}
+.check .who{
+    margin-top: 10%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.check .display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.check .display .up{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.check .card{
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    background-color: rgb(195, 190, 190);
+}
+.check .card p{
+    font-size: 1.5rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.check .display span{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.check .display .Security{
+    color: green;
+}
+.check .display .Both{
+    color: blue;
+}
+.check .display .Citizen{
+    color: rgb(243, 243, 4);
+}

@@ -15,6 +15,11 @@ const Nav = () => (
           <a>Home</a>
         </Link>
       </li>
+      <li>
+        <Link href="/Onboarding1" legacyBehavior>
+          <a>Start</a>
+        </Link>
+      </li>
       <ul>
         {links.map(
           ({ key, href, label }) => (
