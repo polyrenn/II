@@ -1,4 +1,6 @@
 import Danger from "../components/danger";
+import Header from "../components/header";
+import Navbar from "../components/Navbar";
 
 const DANGERS_LIST = [
     {
@@ -321,10 +323,14 @@ const DANGERS_LIST = [
 function Dangers(){
     return(
         <div className="danger">
+            <Header/>
+            <div className="container">
             <p className="dangerText">Report a <span className="red">Crime</span> or an <span className="red">Emergency!</span> </p>
             <div>
                 <Danger items={DANGERS_LIST}/>
             </div>
+            </div>
+            <Navbar/>
         </div>
     )
 }

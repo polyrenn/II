@@ -1,8 +1,11 @@
+import Header from "../components/header";
+import Navbar from "../components/Navbar";
 import Onboarding from "../components/Onboadring";
 
 function Brodcast(){
     return(
         <section className="brodcast">
+            <Header/>
             <div className="pin"> <img className="icon" src="https://cdn3.iconfinder.com/data/icons/map-navigation-8/512/location-pin-coordinate-point-64.png" alt="pin" /></div>
             <div className="bigCircle"></div>
             <Onboarding 
@@ -13,6 +16,7 @@ function Brodcast(){
                 first="Keep Yourself Safe"
                 second="Help is on it's way!"
             />
+            <Navbar/>
         </section>
     )
 }

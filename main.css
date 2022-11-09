@@ -6,15 +6,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* THINGS TO BE HIDDEN */
+.brodcast section .header,
+.brodcast .show,
+.mainPage .onboarding .header,
+.mainPage .onboarding .space,
+.mainPage .onboarding .show
+{
+    display: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
 .onboarding{
     padding-top: 30px;
     width: 95%;
     margin: auto;
-}
-.onboarding h1, .report h1{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
 }
 .space{
     margin-top: 40%;
@@ -28,7 +47,14 @@
     height: 25px;
     margin-right: 5px;
 }
-.onboarding .button, .welcome .buttonB{
+.onboarding .button,
+.welcome .buttonB,
+.check .button,
+.police .button,
+.modal1 .button,
+.modal2 .button,
+.law .button
+   {
     width: 327px;
     margin: auto;
     font-size: 1.2rem;
@@ -42,24 +68,39 @@
     justify-content: center;
     align-items: center;
 }
+
+.police .button{
+    background-color: white;
+    border: 1px solid rgb(169, 169, 241);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
 .welcome .buttonB{
     background-color: rgb(217, 213, 213);
     color: black;
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.writingsA p:nth-child(1){
+.writingsA p:nth-child(1), .check .who, .lawText p:first-child{
     font-weight: bold;
     font-size: 2rem;
     width: 70%;
     margin: 15px 0;
     height: 10%;
 }
-.writingsA p:nth-child(2){
+.lawText p:first-child{
+    margin-bottom: 0;
+}
+.check .who{
+    font-size: 1.4rem;
+    margin-bottom: 3px;
+}
+.writingsA p:nth-child(2), .check .info, .lawText p:last-child {
     color: grey;
     margin-bottom: 20px;
-    height: 30%;
 }
+
 .brodcast p:nth-child(1), .brodcast p:nth-child(2){
     color: whitesmoke;
 }
@@ -86,10 +127,6 @@
 }
 .welcome .createA p span{
     color: rgb(5, 203, 203);
-}
-.danger{
-    width: 95%;
-    margin: auto;
 }
 .dangerText, .report .question{
     margin-top: 10%;
@@ -121,7 +158,7 @@
     justify-content: space-around;
     text-align: center;
 }
-.danger img{
+.danger ul li img{
     width: 40px;
 }
 .centralize{
@@ -162,9 +199,6 @@
     width: 100vw;
     overflow-x: hidden;
 }
-.brodcast section h1,.brodcast .show{
-    display: none;
-}
 .brodcast .button{
     color: black;
     background-color: whitesmoke;
@@ -198,50 +232,353 @@
     position: absolute;
     bottom: 7%;
 }
-.check .who{
-    margin-top: 10%;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
+.brodcast .navbar p{
+    color: black;
 }
-.check .display{
+/* I DID THIS PARTICULAR CODE SO THERE'LL BE SPACE BENEATH THE BUTTON AND IT AINT TOO CLOSE TO THE NAVBAR */
+.brodcast .button{
+    margin-bottom: 40px;
+}
+.helloPink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.helloPink .icon{
+    width: 45px;
+    height: 45px;
+}
+.helloPink .daisy{
+    margin: 30px 0;
+}
+.helloPink .daisy p:first-child{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+}
+.helloPink .daisy p:last-child{
+    color: rgb(149, 144, 144);
+}
+.mainPage .location{
+    width: 80%;
+    margin: auto;
+    background-color: #0d0d0d;
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
     align-items: center;
     margin-bottom: 30px;
+}
+.mainPage .location button{
+    width: 90%;
+    background-color: white;
+    color: #0d0d0d;
+    padding: 7px 0px;
+    border-radius: 7px;
+}
+.mainPage .reportSomething{
+    color: rgb(136, 130, 130);
+}
+.mainPage .reportSomething .seeMore{
+    color: #4a4949;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.mainPage .reportSomething .lineCase{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 10px 0px;
+}
+.mainPage .reportSomething .lineCase .line{
+    background-color: rgb(245, 243, 243);
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    height: 50px;
+    border-radius: 7px;
+}
+.mainPage .onboarding .writingsA p:first-child{
+    font-size: 1.3rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.mainPage .onboarding .button{
+    background-color: #f15454;
+}
+.mainPage,
+.police,
+.danger,
+.report
+{
+    padding-bottom: 70px;
+}
+
+.check{
+    padding-top: 10%;
 }
 .check .display .up{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
-.check .card{
-    border: 1px solid black;
-    border-radius: 8px;
+.check .card img{
+    width: 30px;
+}
+.check .card p:first-child{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.check .card p:last-child{
+    font-size: 0.8rem;
+    color: #717070;
+    width: 80%;
+}
+.check label{
+    background-color: #f3f0f0a5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7px;
+    width: 95%;
+    margin: auto;
+    border-radius: 9px;
+}
+.check .button{
+    margin-top: 30px;
+}
+.police .mapspace{
+    margin-top: 40px;
+    height: 350px;
+    background-color: aquamarine;
+    position: relative;
+}
+.modal3{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: white;
+    border-radius: 9px;
+    width: 90%;
+    padding: 15px 0px 30px 10px;
+}
+.modal3 .head{
+    margin-bottom: 20px;
+}
+.modal3 .head p:first-child,
+.modal3 .body p,
+.modal2Text p:first-child
+{
+    font-weight: bold;
+}
+.modal3 .body p{
+    margin-bottom: 5px;
+}
+.modal3 .head p:last-child,
+.modal3 .body ul,
+.modal2Text p:last-child,
+.law form label
+{
+    list-style: none;
+    color: #979696;
+    font-size: 0.9rem;
+}
+.modal3 .body ul li{
+    margin-bottom: 5px;
+}
+.modal3 .body ul span{
+    color: blue;
+}
+.modal3 .nest{
+    position: relative;
+}
+.cancel{
+    position: absolute;
+    top: 0;
+    right: 2%;
+    width: 30px;
+}
+.navbar{
+    border-top: 1px solid #979696;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+.navbar div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 0;
-    background-color: rgb(195, 190, 190);
+    gap: 5px;
+    font-size: 0.8rem;
+    padding-bottom: 10px;
 }
-.check .card p{
-    font-size: 1.5rem;
+.navbar div img{
+    width: 20px;
+}
+.modal1{
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
+.modal1 .relative{
+    height: 100%;
+    position: relative;
+}
+.modal1 .button{
+    width: 90%;
+    position: absolute;
+    bottom: 3%;
+    left: 6%;
+}
+.iconDiv{
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconDiv img{
     width: 80%;
-    margin: auto;
-    margin-top: 10px;
+}
+.modal1 .relative .cancel{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 40px;
+}
+.modal1 .relative .iconDiv:nth-child(2){
+    background-color: rgb(200, 238, 229);
+    height: 150px;
+    width: 150px;
+    top: 15%;
+    left: 30%;
+}
+.modal1 .relative .iconDiv:nth-child(3){
+    background-color: rgb(224, 161, 84);
+    height: 30px;
+    width: 30px;
+    top: 4%;
+    left: 48%;
+}
+.modal1 .relative .iconDiv:nth-child(4){
+    background-color: rgb(206, 232, 113);
+    height: 50px;
+    width: 50px;
+    bottom: 28%;
+    left: 28%;
+}
+.modal1 .relative .iconDiv:nth-child(5){
+    background-color: rgb(238, 79, 233);
+    height: 50px;
+    width: 50px;
+    top: 10%;
+    right: 20%;
+}
+.modal1 .relative .iconDiv:nth-child(6){
+    background-color: rgb(32, 179, 21);
+    height: 90px;
+    width: 90px;
+    top: 6%;
+    left: 15%;
+}
+.modal1 .relative .iconDiv:nth-child(7){
+    background-color: rgb(202, 200, 238);
+    height: 90px;
+    width: 90px;
+    bottom: 25%;
+    right: 10%;
+}
+.modal1 .relative .iconDiv:nth-child(8){
+    background-color: rgb(255, 132, 132);
+    height: 30px;
+    width: 30px;
+    bottom: 24%;
+    left: 48%;
+}
+.modal1 .relative .iconDiv:nth-child(9){
+    background-color: rgb(68, 71, 241);
+    height: 30px;
+    width: 30px;
+    top: 40%;
+    left: 20%;
+}
+.modal1 .relative .iconDiv:nth-child(10){
+    background-color: rgb(58, 222, 61);
+    height: 30px;
+    width: 32px;
+    top: 30%;
+    right: 15%;
+}
+.modal2{
+    position: absolute;
+    background-color: white;
+    border-radius: 9px;
+    top: 6%;
+    left: 6%;
+    padding: 30px 10px;
+    width: 90%;
+}
+.modal2 .relative{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.modal2 .modal2Text{
+    text-align: left;
+}
+.modal2 img{
+    width: 50px;
+}
+.modal2 input{
+    padding: 10px 5px;
+    border: none;
+    border-radius: 8px;
+}
+.modal2 .button, .modal2 input{
+    width: 90%;
+}
+.law .container{
+    margin-top: 30px;
+    width: 85%;
+}
+.law .lawText p:first-child{
+    font-size: 1.5rem;
+}
+
+.law .button{
+    width: 90%;
+    margin-top: 150px;
+}
+.law form .in{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.law form input{
+    width: 95%;
+    background-color: #e6e3e3;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 8px;
+}
+.law form .upload{
     text-align: center;
-}
-.check .display span{
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-.check .display .Security{
-    color: green;
-}
-.check .display .Both{
     color: blue;
-}
-.check .display .Citizen{
-    color: rgb(243, 243, 4);
+    margin-top: 5px;
+    margin-bottom: 20px;
 }

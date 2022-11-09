@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import Header from './header';
 
 const Onboarding = (props)=>{
     return(
         <section className='onboarding'>
-            <h1>LOGO</h1>
+            <Header/>
             <div className='space'>
                 
             </div>

@@ -1,0 +1,35 @@
+MAP 8
+This is a geologic map with four (4) different rock types namely; Limestone, Conglomerate, Sandstone, Shale.
+There are no rivers running through the map hence no drainage patterns.
+Limestone is located at the Nothern most part of the map and is at the highest point above sea level (400m).
+While shale is located at the south eastern part and surrounds limestone in the North. The shale bed is from 200m to 350m above sea level.
+Conglomerate can be seen at the east and west part of the map and it's at the lowest point of the map at 100m above sea level.
+While sandstone spreads along almost the map and it strethes from 200 to 350 meters.
+
+There are no folds or faults on the map because it hasn't undergone any type of deformation, this is known because all the rock beds are perfectly on a horizontal strata.
+
+The area has a gentle slope which gradually decends from 400 meters above sea level to 100 meters above sea level.
+
+Limestone is found at the highest elevation in this area making it easy to mine. Limestone is the treasure of Calcium, it is the best source of Natural Calcium so it will be mined in this area.
+
+Conglomerate was first deposited in this area, then shale was deposited before sandstone and finally limestone.
+
+
+
+MAP 12
+THis is a geoogic map with 5 different rock types namely; Limestone, p, q, sandstone and Conglomerate.
+There are 2 two seperate rivers running through the ma, both have dendtritic drainage patterns and one drains towards the south west while the other drains towards the south.
+Limestone is located at the Nothern most part of the map and is at the highest point above sea level (800m).
+P surrounds the limestone on the map and ranges from 650 meters to 750 meters above sea level
+q surrounds p on the map and ranges from 300 meters to 650 meters above sea level.
+sabdstone surrounds q on the map and ranges from 150 to 300 meters above sea level
+Conglomerate can be seen at the south west and south of the ma and is at the lowest point above sea level (<150 meters)
+
+There are no folds or faults on the map because it hasn't undergone any type of deformation, this is known because all the rock beds are perfectly on a horizontal strata.
+
+Limestone is found at the highest elevation in this area making it easy to mine. Limestone is the treasure of Calcium, it is the best source of Natural Calcium so it will be mined in this area.
+
+The area has two hills at the north of the map and it has a gentle slope downwards to 200m above sea level.
+
+Conglomerate was first deposited in this area, then Sandstone was deposited before q  then p and finally limestone.
+
