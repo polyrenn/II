@@ -12,7 +12,9 @@
 .brodcast .show,
 .mainPage .onboarding .header,
 .mainPage .onboarding .space,
-.mainPage .onboarding .show
+.mainPage .onboarding .show,
+.mainPage .daisy img,
+.police .daisy img
 {
     display: none;
 }
@@ -128,12 +130,12 @@
 .welcome .createA p span{
     color: rgb(5, 203, 203);
 }
-.dangerText, .report .question{
+.dangerText{
     margin-top: 10%;
     font-size: 2rem;
     font-weight: bold;
 }
-.dangerText span, .report .question span{
+.dangerText span{
     color: red;
 }
 .dangerList{
@@ -165,32 +167,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-}
-.report .question{
-    font-size: 1.6rem;
-    width: 80%;
-}
-.report .show{
-    width: 220px;
-    height: 220px;
-    margin-top: 15%;
-}
-.report .emeButtons{
-    margin-top: 40%;
-    justify-content: center;
-    display: flex;
-    gap: 30px;
-    font-size: 0.9rem;
-}
-.report .emeButtons div{
-    width: 150px;
-    height: 80px;
-    background-color: #0d0d0d;
-    color: whitesmoke;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .brodcast{
     background-color: #ef6868;
@@ -258,6 +234,13 @@
 }
 .helloPink .daisy p:last-child{
     color: rgb(149, 144, 144);
+}
+.daisy  .two .icon{
+    width: 22px;
+    height: 22px;
+}
+.daisy .two{
+    display: flex;
 }
 .mainPage .location{
     width: 80%;
@@ -581,4 +564,65 @@
     color: blue;
     margin-top: 5px;
     margin-bottom: 20px;
+}
+.report{
+    position: fixed;
+    top: 15%;
+    left: 9%;
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #f47070;
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+.report .relative{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.report .title{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 70%;
+}
+.report .title .direct{
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #717070;
+    font-weight: 100;
+}
+.report .title span{
+    color: red;
+    font-size: 1.5rem;
+}
+.report .show{
+    width: 50%;
+}
+.feed_li{
+    border: 1px solid #979696;
+    border-radius: 9px;
+    color: #979696;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+    padding: 15px 10px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.feed_li div{
+    display: flex;
+    gap: 10px;
+}
+.feed_li div label{
+    color: black;
+}
+.no_more{
+    margin-top: 20px;
+    text-align: center;
+    color: #979696;
 }
